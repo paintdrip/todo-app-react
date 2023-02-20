@@ -26,7 +26,7 @@ const Todo: React.FunctionComponent<TodoProps> = ({
     value: '',
   });
 
-  const submitUpdate = (value: string) => {
+  const submitUpdate = (value: { id: number; text: string }) => {
     updateTodo(edit.id, value);
     setEdit({
       id: null,

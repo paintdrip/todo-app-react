@@ -1,6 +1,10 @@
 import React, { MutableRefObject, useEffect } from 'react';
 
-const Form: React.FunctionComponent = (props: any) => {
+export interface FormProps {
+  onSubmit: (data: { id: number; text: string }) => void;
+}
+
+const Form = ({ onSubmit }: FormProps) => {
   const [input, setInput] = React.useState('');
 
   const inputRef = React.useRef<HTMLInputElement>(null!);
@@ -19,7 +23,7 @@ const Form: React.FunctionComponent = (props: any) => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    props.onSubmit({
+    onSubmit({
       id: Math.floor(Math.random() * 10000),
       text: input,
     });

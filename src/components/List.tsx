@@ -3,7 +3,9 @@ import Form from './Form';
 import Todo from './Todo';
 
 const List: React.FunctionComponent = () => {
-  const [todos, setTodos] = React.useState<Array<string>>([]);
+  const [todos, setTodos] = React.useState<
+    Array<{ id: number; isComplete: boolean; text: string }>
+  >([]);
 
   // Убираем спам пробелами, при его вводе в todo
   const addTodo = (todo: any) => {
