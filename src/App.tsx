@@ -5,7 +5,7 @@ import List from './components/List';
 // Основной файл с подключением компонентов
 function App() {
   return (
-    <div className="todo-app">
+    <div className="todo">
       <List />
     </div>
   );
