@@ -9,7 +9,6 @@ const Form = ({ onSubmit }: FormProps) => {
 
   const inputRef = React.useRef<HTMLInputElement>(null!);
 
-  // поставить проверку
   React.useEffect(() => {
     inputRef.current.focus();
   });
