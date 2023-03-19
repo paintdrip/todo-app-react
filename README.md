@@ -1,6 +1,6 @@
 # 📝 Todo App React 📝
 
-ts test proj
+## ts test proj
 
 ![preview-1](https://i.ibb.co/6btDDJz/2.png)
 ![preview-2](https://i.ibb.co/SNY7TDh/1.png)
